@@ -10,6 +10,6 @@ keep_vars = true
 # 以上白名单只填写自己管理或已登记的来源/探测主机；不在白名单中的目标会被拒绝。
 
 # 管理页和订阅配置依赖名为 KV 的命名空间；部署时填入实际命名空间 ID。
-#[[kv_namespaces]]
-#binding = "KV"
-#id = "Eric"
+[[kv_namespaces]]
+binding = "KV"
+id = "04cdc44740ba40d8affa476448bfaafb"
