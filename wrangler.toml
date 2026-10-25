@@ -1,8 +1,15 @@
-name = "eric-clash"
+name = "v20251104"
 main = "_worker.js"
 compatibility_date = "2025-11-04"
 keep_vars = true
 
+# 受控网络工具默认关闭。需要使用来源刷新/批量测速时，在部署平台配置：
+# CHAIN_NETWORK_TOOLS=1
+# CHAIN_SOURCE_HOSTS=HOST_A,HOST_B
+# CHAIN_PROBE_HOSTS=HOST_A,HOST_B
+# 以上白名单只填写自己管理或已登记的来源/探测主机；不在白名单中的目标会被拒绝。
+
+# 管理页和订阅配置依赖名为 KV 的命名空间；部署时填入实际命名空间 ID。
 #[[kv_namespaces]]
-#binding = "KV"			#KV绑定名默认不可修改
-#id = ""				#KV数据库id
+#binding = "KV"
+#id = "Eric"
